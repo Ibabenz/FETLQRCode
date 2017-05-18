@@ -132,7 +132,7 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
     private void initialView() {
         textView = (TextView) findViewById(R.id.txtNameLogin);
         barImageView = (ImageView) findViewById(R.id.imvBarCode);
-        qrImageView = (ImageView) findViewById(R.id.imvBarCode);
+        qrImageView = (ImageView) findViewById(R.id.imvQrCode);
         listView = (ListView) findViewById(R.id.livProduct);
     }
 
