@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context="fetl.kachintorn.siripong.fetlqrcode.ServiceActivity">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +15,7 @@
         android:padding="@dimen/padding">
 
         <TextView
+            android:id="@+id/txtNameLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
@@ -35,6 +35,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imvBarCode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -50,12 +51,13 @@
             </LinearLayout>
 
             <LinearLayout
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imvQrCode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -74,5 +76,10 @@
         </LinearLayout>
 
     </RelativeLayout>
+
+    <ListView
+        android:id="@+id/livProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
 
 </LinearLayout>
