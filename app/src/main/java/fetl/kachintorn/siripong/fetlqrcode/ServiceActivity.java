@@ -56,8 +56,10 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
                 SearchKey searchKey = new SearchKey(this);
                 searchKey.execute(myCodeString);
                 String strJSON = searchKey.get();
+
                 JSONArray jsonArray = new JSONArray(strJSON);
                 JSONObject jsonObject = jsonArray.getJSONObject(0);
+
                 Intent intent = new Intent(ServiceActivity.this, DetailActivity.class);
                 intent.putExtra("Name", jsonObject.getString("Produce"));
                 intent.putExtra("Detail", jsonObject.getString("Detail"));

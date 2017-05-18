@@ -32,7 +32,7 @@ public class SearchKey extends AsyncTask<String, Void, String> {
             OkHttpClient okHttpClient = new OkHttpClient();
             RequestBody requestBody = new FormEncodingBuilder()
                     .add("isAdd", "true")
-                    .add("KeyCode", params[0])
+                    .add("Keycode", params[0])
                     .build();
 
             Request.Builder builder = new Request.Builder();
